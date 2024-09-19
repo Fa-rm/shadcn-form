@@ -71,8 +71,8 @@ export default function Home() {
     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
       <Card className="w-[350px]">
         <CardHeader>
-          <CardTitle>Register</CardTitle>
-          <CardDescription>Start the journey with us today.</CardDescription>
+          <CardTitle>Tripwix</CardTitle>
+          <CardDescription>Start the Walk with us today.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -130,7 +130,7 @@ export default function Home() {
                   name="studentId"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Student ID</FormLabel>
+                      <FormLabel>Property ID</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Enter your student id..."
@@ -147,7 +147,7 @@ export default function Home() {
                   name="year"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Year of study</FormLabel>
+                      <FormLabel>Year of Construction</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -169,6 +169,7 @@ export default function Home() {
                       </Select>
                       <FormMessage />
                     </FormItem>
+
                   )}
                 />
               </motion.div>
